@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Call Blocker Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Call Blocker Android app by RomanXView.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/*
+VOICE: formal, calm, plain-spoken; a legal document a normal person can read.
+IDEA: the app's own "shield" card: a policy set like a well-printed leaflet from the app.
+PICTURE: the app's shield-and-phone mark on a deep blue header band, with the 30-second summary beside it.
+COLOUR and TYPE: deep blue (#1D4ED8 -> #0E2A6B) from the icon, white page, one green accent for "stays on your phone"; Inter throughout.
+LAYOUT: blue header band, summary tiles, section links, then a single readable column with one permissions table.
+*/
+:root{color-scheme:light dark;
+  --bg:light-dark(#ffffff,#0b1220);--ink:light-dark(#0f172a,#e6ebf5);--muted:light-dark(#475569,#9fb0cc);
+  --line:light-dark(#e2e8f0,#22304a);--soft:light-dark(#f4f7fd,#111b2e);
+  --blue:#1d4ed8;--deep:#0e2a6b;--green:light-dark(#15803d,#4ade80);--link:light-dark(#1d4ed8,#93c5fd)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:clip}
+a{color:var(--link)}
+.band{padding:clamp(28px,4vw,64px) max(5vw,16px)}
+.wrap{max-width:1040px;margin:0 auto}
+header.band{background:linear-gradient(135deg,var(--blue),var(--deep));color:#fff}
+.head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.head h1{font-size:clamp(32px,5vw,48px);line-height:1.05;margin:6px 0 12px;text-wrap:balance;font-weight:700}
+.head p{margin:0;color:#dbe6ff;max-width:60ch}
+.meta{margin-top:18px;font-size:14px;color:#c7d6ff}
+.mark{width:150px;height:150px;filter:drop-shadow(0 10px 18px rgba(2,6,23,.35))}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:-34px}
+.tile{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:18px 20px;box-shadow:0 8px 24px rgba(15,23,42,.08)}
+.tile b{display:block;font-size:17px;margin-bottom:4px}
+.tile span{color:var(--muted);font-size:15px}
+.tile .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:8px;vertical-align:middle}
+nav.scroll{display:flex;gap:8px;overflow-x:auto;padding:22px 0 4px}
+nav.scroll a{flex:none;text-decoration:none;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px}
+main{max-width:760px;margin:0 auto}
+h2{font-size:24px;line-height:1.2;margin:44px 0 10px}
+h3{font-size:17px;margin:24px 0 6px}
+p,li{color:var(--ink)}
+.note{color:var(--muted);font-size:15px}
+ul{padding-left:22px}li{margin:6px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0 8px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:12px 10px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);font-size:14px}
+td:first-child{font-weight:600;white-space:nowrap}
+.hi{background:var(--soft);border-radius:18px;padding:6px 22px 14px;margin-top:44px}
+.hi h2{margin-top:20px}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:48px}
+html{scroll-padding-top:24px}
+@media(max-width:700px){.head{grid-template-columns:1fr}.mark{width:96px;height:96px;order:-1}.tiles{grid-template-columns:1fr;margin-top:-22px}}
+@media(max-width:600px){table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em;text-align:start;white-space:normal}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;white-space:normal;color:var(--muted);font-weight:500}.stack td:empty{display:none}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap head">
+    <div>
+      <div class="meta" style="margin:0">Call Blocker · Android app by RomanXView</div>
+      <h1>Privacy Policy</h1>
+      <p>Call Blocker blocks unwanted calls by number prefix. It works on your phone, without an account, and it does not send your calls, contacts or settings to us or anyone else. The app shows banner ads from Google AdMob; this page explains exactly what that involves.</p>
+      <div class="meta">Effective date: 26 November 2026 · Package: com.secure.callblocker</div>
+    </div>
+    <svg class="mark" viewBox="0 0 108 108" role="img" aria-label="Call Blocker shield">
+      <defs>
+        <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#d6e6ff"/></linearGradient>
+        <linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+      </defs>
+      <path d="M54,21 C62.5,26.5 71.5,28.5 81,28.5 L81,52 C81,69.5 69.5,80.5 54,87.5 C38.5,80.5 27,69.5 27,52 L27,28.5 C36.5,28.5 45.5,26.5 54,21 Z" fill="url(#s)"/>
+      <g transform="translate(37.6 37.2) scale(1.38)"><path fill="url(#p)" d="M20.01,15.38c-1.23,0 -2.42,-0.2 -3.53,-0.56 -0.35,-0.12 -0.74,-0.03 -1.01,0.24l-1.57,1.97c-2.83,-1.35 -5.48,-3.9 -6.89,-6.83l1.95,-1.66c0.27,-0.28 0.35,-0.67 0.24,-1.02 -0.37,-1.11 -0.56,-2.3 -0.56,-3.53 0,-0.54 -0.45,-0.99 -0.99,-0.99H4.19C3.65,3 3,3.24 3,3.99 3,13.28 10.73,21 20.01,21c0.71,0 0.99,-0.63 0.99,-1.18v-3.45c0,-0.54 -0.45,-0.99 -0.99,-0.99z"/></g>
+      <circle cx="74.5" cy="72.5" r="10.5" fill="#22c55e" stroke="#fff" stroke-width="2.6"/>
+      <path d="M69.6,72.8 L73,76.2 L79.6,69.4" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</header>
+
+<div class="band" style="padding-top:0">
+  <div class="wrap">
+    <div class="tiles">
+      <div class="tile"><b><span class="dot"></span>Your data stays on your phone</b><span>Prefixes, call history, profile and schedules are stored only on your device.</span></div>
+      <div class="tile"><b><span class="dot"></span>Calls are checked offline</b><span>Blocking never uses the internet and nothing about your calls is uploaded.</span></div>
+      <div class="tile"><b><span class="dot"></span>Ads come from Google</b><span>Banner ads may use your advertising ID and IP address. You can control this.</span></div>
+    </div>
+    <nav class="scroll" aria-label="Sections">
+      <a href="#data">What the app uses</a><a href="#permissions">Permissions</a><a href="#ads">Ads</a><a href="#sharing">Sharing</a><a href="#retention">Storage and deletion</a><a href="#children">Children</a><a href="#contact">Contact</a><a href="#hindi">हिन्दी सारांश</a>
+    </nav>
+  </div>
+</div>
+
+<main class="band" style="padding-top:0">
+
+<h2 id="data">1. Information the app uses</h2>
+<p>We (RomanXView, the developer) do not run any server for this app and do not receive the information below. It is processed and stored on your device only, unless you have turned on Android backup (see section 6).</p>
+
+<h3>Incoming call numbers</h3>
+<p>When a call comes in, Android gives the app the caller's number so it can compare it with your blocked prefixes. This check happens instantly on your phone. If a call is blocked, the number, the matching prefix and the time are saved in your on-device call history. Numbers of calls that are not blocked are not saved. Android does not give call screening apps the numbers of people saved in your contacts.</p>
+
+<h3>Prefixes, settings and schedules</h3>
+<p>The prefixes you add, your theme, language, blocking and pop-up settings, your quiet hours schedule and the numbers you allow to ring are stored on your phone.</p>
+
+<h3>Your profile</h3>
+<p>The app asks for your name. Email address and profile photo are optional. The photo is chosen with Android's photo picker and a resized copy is kept privately inside the app. Your profile is only shown inside the app and is never sent to us.</p>
+
+<h3>SIM details (optional)</h3>
+<p>If you allow phone access, the app reads your SIM's carrier name, country and, where your carrier provides it, your phone number, to show them on your profile. They are read when you open the profile and are not uploaded.</p>
+
+<h3>Contacts</h3>
+<p>The app does not request permission to read your contact list. If you choose "Pick contact" in Quiet hours, Android's own contact picker gives the app only the one contact you select, and its name and number are saved on your phone as a number that may ring during quiet hours. The quiet hours options for starred contacts, all contacts and repeat callers use Android's Do Not Disturb settings; the app itself does not read your contacts for these.</p>
+
+<h2 id="permissions">2. Permissions and why they are needed</h2>
+<table class="stack">
+  <thead><tr><th>Permission</th><th>Why</th><th>Required?</th></tr></thead>
+  <tbody>
+    <tr><td>Call screening</td><td>Lets Android ask the app whether to allow or reject each incoming call.</td><td>Yes, for blocking</td></tr>
+    <tr><td>Display over other apps</td><td>Shows a small see-through "Call blocked" notice for 3 seconds. It never captures your touches.</td><td>Optional</td></tr>
+    <tr><td>Do Not Disturb access</td><td>Switches your phone to Vibrate or Silent during quiet hours and restores it afterwards.</td><td>Optional</td></tr>
+    <tr><td>Alarms and reminders</td><td>Starts and ends quiet hours on the exact minute.</td><td>Optional</td></tr>
+    <tr><td>Run at startup</td><td>Re-arms your quiet hours schedule after the phone restarts.</td><td>Automatic</td></tr>
+    <tr><td>Phone state and numbers</td><td>Shows your SIM carrier and number on your profile.</td><td>Optional</td></tr>
+    <tr><td>Internet and network state</td><td>Loads banner ads. Call blocking itself never uses the internet.</td><td>Automatic</td></tr>
+    <tr><td>Advertising ID</td><td>Used by Google AdMob to show and measure ads.</td><td>Automatic, you can reset or delete it</td></tr>
+  </tbody>
+</table>
+<p class="note">The app never requests access to your SMS, call log, location, microphone, camera or files.</p>
+
+<h2 id="ads">3. Advertising</h2>
+<p>The app shows banner ads from Google AdMob on the Home and Calls screens. To serve, personalise (where allowed) and measure these ads, and to prevent fraud, the Google Mobile Ads SDK may collect and process:</p>
+<ul>
+  <li>your device's advertising ID and app set ID,</li>
+  <li>your IP address and approximate location derived from it,</li>
+  <li>device and app information, such as model, operating system version and app version,</li>
+  <li>ad interactions, such as views and taps, and diagnostic data about ad loading.</li>
+</ul>
+<p>This collection is done by Google, under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. You can read how Google uses data from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Your blocked prefixes, call history, profile and contacts are never shared with Google or any ad partner.</p>
+<p><b>Your choices.</b> In the European Economic Area, the UK and Switzerland, the app asks for your consent before personalised ads are shown, and you can change your choice at any time in <b>Settings → Ad privacy choices</b>. Anywhere, you can reset or delete your advertising ID in your phone's Settings → Privacy → Ads (the exact path depends on your phone).</p>
+
+<h2 id="sharing">4. Sharing and selling</h2>
+<p>We do not sell your personal information and do not share it with anyone. The only data that leaves your device is what the Google Mobile Ads SDK sends to Google, described in section 3. The app contains no analytics or tracking of its own.</p>
+
+<h2 id="security">5. Security</h2>
+<p>Your information is kept in the app's private storage, which other apps cannot read. Release versions of the app do not write phone numbers or prefixes to the system log.</p>
+
+<h2 id="retention">6. Storage, backup and deletion</h2>
+<ul>
+  <li>Your data stays on your phone for as long as the app is installed.</li>
+  <li>You can delete your blocked call history at any time in <b>Settings → Clear history</b>, remove prefixes and allowed numbers in the app, and edit or remove your profile details and photo.</li>
+  <li>Uninstalling the app deletes all of its data from your phone.</li>
+  <li>If Android backup is turned on, Android may include the app's data in your device backup in your Google account and restore it on a new phone. This is controlled by you in your phone's backup settings and handled by Google.</li>
+</ul>
+
+<h2 id="children">7. Children</h2>
+<p>The app is not directed at children under 13 and we do not knowingly collect information from children.</p>
+
+<h2 id="changes">8. Changes to this policy</h2>
+<p>If the app's data practices change, we will update this page and its effective date. Significant changes will also be noted in the app's release notes on Google Play.</p>
+
+<h2 id="contact">9. Contact</h2>
+<p>For questions about this policy or your data, contact RomanXView at <a href="mailto:rinkeshs010@gmail.com">rinkeshs010@gmail.com</a> (rinkeshs010@gmail.com).</p>
+
+<section class="hi" id="hindi" lang="hi">
+  <h2>हिन्दी सारांश</h2>
+  <ul>
+    <li>आपके प्रीफ़िक्स, ब्लॉक कॉल की हिस्ट्री, प्रोफ़ाइल और शांत समय का शेड्यूल सिर्फ़ आपके फ़ोन में रहते हैं। हम (RomanXView) कोई सर्वर नहीं चलाते और यह जानकारी हमें नहीं मिलती।</li>
+    <li>कॉल की जाँच फ़ोन पर ही, बिना इंटरनेट के होती है। सिर्फ़ ब्लॉक हुई कॉल का नंबर, प्रीफ़िक्स और समय फ़ोन में सेव होता है।</li>
+    <li>ऐप आपकी कॉन्टैक्ट लिस्ट पढ़ने की अनुमति नहीं माँगता। शांत समय में "कॉन्टैक्ट चुनें" से Android सिर्फ़ आपका चुना हुआ एक कॉन्टैक्ट ऐप को देता है।</li>
+    <li>ऐप में Google AdMob के बैनर विज्ञापन हैं। Google विज्ञापन दिखाने और मापने के लिए विज्ञापन ID, IP पता और डिवाइस की जानकारी इस्तेमाल कर सकता है। आपकी कॉल, प्रीफ़िक्स या कॉन्टैक्ट्स कभी साझा नहीं होते।</li>
+    <li>हिस्ट्री सेटिंग्स में साफ़ कर सकते हैं; ऐप हटाने पर सारा डेटा फ़ोन से हट जाता है।</li>
+    <li>संपर्क: rinkeshs010@gmail.com</li>
+  </ul>
+</section>
+
+<footer class="band" style="padding-inline:0">
+  Call Blocker by RomanXView · com.secure.callblocker · Effective 26 November 2026
+</footer>
+</main>
+</body>
+</html>
