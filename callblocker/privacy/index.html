@@ -100,7 +100,7 @@ html{scroll-padding-top:24px}
 <p>We (RomanXView, the developer) do not run any server for this app and do not receive the information below. It is processed and stored on your device only, unless you have turned on Android backup (see section 6).</p>
 
 <h3>Incoming call numbers</h3>
-<p>When a call comes in, Android gives the app the caller's number so it can compare it with your blocked prefixes. This check happens instantly on your phone. If a call is blocked, the number, the matching prefix and the time are saved in your on-device call history. Numbers of calls that are not blocked are not saved. Android does not give call screening apps the numbers of people saved in your contacts.</p>
+<p>When a call comes in, Android gives the app the caller's number so it can compare it with your blocked prefixes. This check happens instantly on your phone. If a call is blocked, the number, the matching prefix and the time are saved in your on-device call history. Numbers of calls that are not blocked are not saved, except that, when you turn on "Block spam calls", numbers that are not in your contacts are kept on your phone for 30 minutes to spot waves of calls from one number series, then deleted. Android gives call screening apps the calls of people saved in your contacts only if you allow Contacts access. Saved contacts are never blocked.</p>
 
 <h3>Prefixes, settings and schedules</h3>
 <p>The prefixes you add, your theme, language, blocking and pop-up settings, your quiet hours schedule and the numbers you allow to ring are stored on your phone.</p>
@@ -112,7 +112,7 @@ html{scroll-padding-top:24px}
 <p>If you allow phone access, the app reads your SIM's carrier name, country and, where your carrier provides it, your phone number, to show them on your profile. They are read when you open the profile and are not uploaded.</p>
 
 <h3>Contacts</h3>
-<p>The app does not request permission to read your contact list. If you choose "Pick contact" in Quiet hours, Android's own contact picker gives the app only the one contact you select, and its name and number are saved on your phone as a number that may ring during quiet hours. The quiet hours options for starred contacts, all contacts and repeat callers use Android's Do Not Disturb settings; the app itself does not read your contacts for these.</p>
+<p>Contacts access is optional. The app asks for it when you add numbers that may ring during quiet hours, because Android only reports calls from saved contacts to the app after you allow it. With this access the app checks, on your phone, whether a calling number is saved in your contacts, so that your chosen numbers can ring and saved contacts are never blocked. Your contacts are not copied, uploaded or shared. "Pick contact" saves only the name and number you select. The options for starred contacts, all contacts and repeat callers use Android's Do Not Disturb settings. You can refuse or withdraw this access in Android settings.</p>
 
 <h2 id="permissions">2. Permissions and why they are needed</h2>
 <table class="stack">
@@ -123,6 +123,7 @@ html{scroll-padding-top:24px}
     <tr><td>Do Not Disturb access</td><td>Switches your phone to Vibrate or Silent during quiet hours and restores it afterwards.</td><td>Optional</td></tr>
     <tr><td>Alarms and reminders</td><td>Starts and ends quiet hours on the exact minute.</td><td>Optional</td></tr>
     <tr><td>Run at startup</td><td>Re-arms your quiet hours schedule after the phone restarts.</td><td>Automatic</td></tr>
+    <tr><td>Contacts</td><td>Recognises calls from saved contacts on your phone, so numbers you chose can ring in quiet hours. Contacts are never uploaded.</td><td>Optional</td></tr>
     <tr><td>Phone state and numbers</td><td>Shows your SIM carrier and number on your profile.</td><td>Optional</td></tr>
     <tr><td>Internet and network state</td><td>Loads banner ads. Call blocking itself never uses the internet.</td><td>Automatic</td></tr>
     <tr><td>Advertising ID</td><td>Used by Google AdMob to show and measure ads.</td><td>Automatic, you can reset or delete it</td></tr>
@@ -169,7 +170,7 @@ html{scroll-padding-top:24px}
   <ul>
     <li>आपके प्रीफ़िक्स, ब्लॉक कॉल की हिस्ट्री, प्रोफ़ाइल और शांत समय का शेड्यूल सिर्फ़ आपके फ़ोन में रहते हैं। हम (RomanXView) कोई सर्वर नहीं चलाते और यह जानकारी हमें नहीं मिलती।</li>
     <li>कॉल की जाँच फ़ोन पर ही, बिना इंटरनेट के होती है। सिर्फ़ ब्लॉक हुई कॉल का नंबर, प्रीफ़िक्स और समय फ़ोन में सेव होता है।</li>
-    <li>ऐप आपकी कॉन्टैक्ट लिस्ट पढ़ने की अनुमति नहीं माँगता। शांत समय में "कॉन्टैक्ट चुनें" से Android सिर्फ़ आपका चुना हुआ एक कॉन्टैक्ट ऐप को देता है।</li>
+    <li>कॉन्टैक्ट्स की अनुमति वैकल्पिक है। इससे ऐप आपके फ़ोन पर ही जाँचता है कि कॉल करने वाला नंबर सेव कॉन्टैक्ट है या नहीं, ताकि आपके चुने नंबर बज सकें। कॉन्टैक्ट्स न कॉपी होते हैं, न अपलोड, न साझा।</li>
     <li>ऐप में Google AdMob के बैनर विज्ञापन हैं। Google विज्ञापन दिखाने और मापने के लिए विज्ञापन ID, IP पता और डिवाइस की जानकारी इस्तेमाल कर सकता है। आपकी कॉल, प्रीफ़िक्स या कॉन्टैक्ट्स कभी साझा नहीं होते।</li>
     <li>हिस्ट्री सेटिंग्स में साफ़ कर सकते हैं; ऐप हटाने पर सारा डेटा फ़ोन से हट जाता है।</li>
     <li>संपर्क: rinkeshs010@gmail.com</li>
